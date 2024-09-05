@@ -6,5 +6,5 @@ edition = "2021"
 [dependencies]
 
 [lib]
-name = "rust-compiler"
+name = "rust_compiler"
 path = "src/lib.rs"

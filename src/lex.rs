@@ -165,7 +165,7 @@ impl Lexer {
     }
 }
 
-#[derive(Debug, PartialEq)]
+#[derive(Debug, PartialEq, Clone)]
 pub struct Token {
     pub text: String,
     pub kind: TokenType,
@@ -177,7 +177,7 @@ impl Token {
     }
 }
 
-#[derive(Debug, PartialEq)]
+#[derive(Debug, PartialEq, Clone)]
 pub enum TokenType {
     EOF,
     NEWLINE,
