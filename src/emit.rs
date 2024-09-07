@@ -1,6 +1,5 @@
 use std::fs::File;
 use std::io::Write;
-use std::path::Path;
 
 pub struct Emitter {
     full_path: String,
@@ -23,15 +22,14 @@ impl Emitter {
 
     pub fn emit_line(&mut self, code: &str) {
         self.code.push_str(code);
-        self.code.push_str("\n");
+        self.code.push('\n');
     }
     pub fn header_line(&mut self, code: &str) {
-        self.code.push_str(code);
-        self.code.push_str("\n");
+        self.header.push_str(code);
+        self.header.push('\n');
     }
-    pub fn write_file(&mut self) -> std::io::Result<()> {
-        let path = Path::new(&self.full_path);
-        let mut file = File::create(&path)?;
+    pub fn write_file(&self) -> std::io::Result<()> {
+        let mut file = File::create(&self.full_path)?;
 
         file.write_all(self.header.as_bytes())?;
         file.write_all(self.code.as_bytes())?;
