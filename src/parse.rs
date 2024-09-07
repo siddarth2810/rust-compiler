@@ -44,6 +44,7 @@ impl Parser {
     pub fn check_token(&self, kind: &TokenType) -> bool {
         &self.cur_token.kind == kind
     }
+    #[allow(dead_code)]
     pub fn check_peek(&self, kind: &TokenType) -> bool {
         &self.peek_token.kind == kind
     }
