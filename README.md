@@ -30,22 +30,13 @@ This is a compiler for the Teeny Tiny language, implemented in Rust. It compiles
 
 ## Usage
 
-1. Write your code in a file with a `.teeny` extension.
+1. Write your code and save the  file with a `.teeny` extension.
 
 2. Compile your `.teeny` file:
     ```bash
-    ./compile.sh your_file.teeny
+     bash compile.sh your_file.teeny
     ```
     This will create an executable with the same name as your `.teeny` file.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## Acknowledgements
-
-This project was inspired by [Austin Henley's tutorial on building a Teeny Tiny compiler](https://austinhenley.com/blog/teenytinycompiler1.html).
-
 
 3. Run the compiled program:
     ```bash
@@ -58,7 +49,7 @@ If you have a file named `lol.teeny`:
 
 1. Compile it:
     ```bash
-    ./compile.sh lol.teeny
+    bash compile.sh lol.teeny
     ```
 
 2. Run it:
