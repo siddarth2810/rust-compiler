@@ -57,4 +57,11 @@ If you have a file named `lol.teeny`:
     ./lol .
     ```
 
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## Acknowledgements
+
+This project was inspired by [Austin Henley's tutorial on building a Teeny Tiny compiler](https://austinhenley.com/blog/teenytinycompiler1.html).
 
