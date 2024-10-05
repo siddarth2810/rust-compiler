@@ -2,8 +2,10 @@
 
 This is a compiler for the Teeny Tiny language, implemented in Rust. It compiles `.teeny` files into C, and then uses GCC to compile the C code into executables.
 
-[compiler](https://github.com/siddarth2810/rust-compiler/compiler.webm)
-[compiler.webm]()
+
+[compiler.webm](https://github.com/user-attachments/assets/06fa7cec-392b-40ff-bdcc-1f633040fdb1)
+
+
 
 ## Prerequisites
 
